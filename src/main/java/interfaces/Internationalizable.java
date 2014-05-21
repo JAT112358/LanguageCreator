@@ -1,4 +1,4 @@
-package components;
+package interfaces;
 
 public interface Internationalizable 
 {

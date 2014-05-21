@@ -1,5 +1,7 @@
 package components;
 
+import interfaces.Internationalizable;
+
 import javax.swing.JLabel;
 
 public class ILabel extends JLabel implements Internationalizable

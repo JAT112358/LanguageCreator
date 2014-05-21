@@ -1,5 +1,7 @@
 package components;
 
+import interfaces.Internationalizable;
+
 import javax.swing.JMenu;
 
 public class IMenu extends JMenu implements Internationalizable

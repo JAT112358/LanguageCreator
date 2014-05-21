@@ -20,7 +20,7 @@ import entities.LangDirectory;
 
 public class Menu extends JMenuBar implements ActionListener {
 
-	private static final long serialVersionUID = -5336398584435950444L;
+	private static final long 		serialVersionUID = -5336398584435950444L;
 
 	// MENU
 	private final JMenu				program;
