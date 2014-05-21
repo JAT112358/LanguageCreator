@@ -146,7 +146,7 @@ public class LabelsPanel extends JPanel
 			}
 		}		
 		listLabels.removeAll();		
-		listModel = new DefaultListModel();
+		listModel = new DefaultListModel<String>();
 		for(String label: labels)
 		{
 			listModel.addElement(label);
@@ -154,7 +154,7 @@ public class LabelsPanel extends JPanel
 		listLabels.setModel(listModel);
 	}
 
-	public JList getLabelsList()
+	public JList<String> getLabelsList()
 	{
 		return this.listLabels;
 	}

@@ -69,6 +69,24 @@
         			</instrumentation>
     			</configuration> 
  			</plugin>
+ 			<!-- mvn assembly:assembly -->
+ 			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<mainClass>application.Main</mainClass>
+						</manifest>
+						<manifestEntries>
+	          				<Class-Path>.</Class-Path> <!-- HERE IS THE IMPORTANT BIT -->
+	        			</manifestEntries>
+					</archive>
+				</configuration>
+    		</plugin>
 		</plugins>
 	</build>
   
